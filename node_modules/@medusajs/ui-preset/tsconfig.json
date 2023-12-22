@@ -1,5 +1,0 @@
-{
-  "extends": "@medusajs/tsconfig-ui/base.json",
-  "include": ["src"],
-  "exclude": ["dist", "build", "node_modules"]
-}
