@@ -1,0 +1,1 @@
+{"version":3,"file":"context-parameter.js","sourceRoot":"","sources":["../../src/decorators/context-parameter.ts"],"names":[],"mappings":";;;AAAA,SAAgB,aAAa;IAC3B,OAAO,UACL,MAAW,EACX,WAA4B,EAC5B,cAAsB;;QAEtB,MAAA,MAAM,CAAC,mBAAmB,oCAA1B,MAAM,CAAC,mBAAmB,GAAK,EAAE,EAAA;QACjC,MAAM,CAAC,mBAAmB,CAAC,WAAW,CAAC,GAAG,cAAc,CAAA;IAC1D,CAAC,CAAA;AACH,CAAC;AATD,sCASC"}

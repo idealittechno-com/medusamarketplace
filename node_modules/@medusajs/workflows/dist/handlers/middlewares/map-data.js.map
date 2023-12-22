@@ -1,0 +1,1 @@
+{"version":3,"file":"map-data.js","sourceRoot":"","sources":["../../../src/handlers/middlewares/map-data.ts"],"names":[],"mappings":";;;AAEA;;;;;GAKG;AACH,SAAgB,OAAO,CAAO,KAAoB,EAAE,KAAK,GAAG,SAAS;IACnE,OAAO,KAAK,WAAW,EAAE,IAAI,EAAwB;QACnD,OAAO;YACL,KAAK;YACL,KAAK,EAAE,KAAK,CAAC,IAAI,CAAC;SACnB,CAAA;IACH,CAAC,CAAA;AACH,CAAC;AAPD,0BAOC"}

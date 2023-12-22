@@ -1,0 +1,9 @@
+declare type Country = {
+    alpha2: string;
+    name: string;
+    alpha3: string;
+    numeric: string;
+};
+export declare const countries: Country[];
+export declare function isoCountryLookup(country: string): string;
+export {};

@@ -1,0 +1,1 @@
+{"version":3,"file":"customer-service.js","sourceRoot":"","sources":["../../src/joiner-configs/customer-service.ts"],"names":[],"mappings":";;AAEA,kBAAe;IACb,WAAW,EAAE,iBAAiB;IAC9B,WAAW,EAAE,CAAC,IAAI,CAAC;IACnB,YAAY,EAAE,EAAE,WAAW,EAAE,UAAU,EAAE;IACzC,KAAK,EAAE;QACL;YACE,IAAI,EAAE,UAAU;SACjB;QACD;YACE,IAAI,EAAE,WAAW;SAClB;KACF;CACoB,CAAA"}

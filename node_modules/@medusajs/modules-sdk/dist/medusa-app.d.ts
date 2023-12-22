@@ -1,0 +1,54 @@
+import { ExternalModuleDeclaration, InternalModuleDeclaration, LoadedModule, MedusaContainer, ModuleJoinerConfig, ModuleServiceInitializeOptions, RemoteJoinerQuery } from "@medusajs/types";
+import { Modules } from "./definitions";
+import { RemoteFetchDataCallback } from "@medusajs/orchestration";
+import { RemoteLink } from "./remote-link";
+export type RunMigrationFn = (options?: ModuleServiceInitializeOptions, injectedDependencies?: Record<any, any>) => Promise<void>;
+export type MedusaModuleConfig = {
+    [key: string | Modules]: boolean | Partial<InternalModuleDeclaration | ExternalModuleDeclaration>;
+};
+export type SharedResources = {
+    database?: ModuleServiceInitializeOptions["database"] & {
+        /**
+         * {
+         *   name?: string
+         *   afterCreate?: Function
+         *   min?: number
+         *   max?: number
+         *   refreshIdle?: boolean
+         *   idleTimeoutMillis?: number
+         *   reapIntervalMillis?: number
+         *   returnToHead?: boolean
+         *   priorityRange?: number
+         *   log?: (message: string, logLevel: string) => void
+         * }
+         */
+        pool?: Record<string, unknown>;
+    };
+};
+export type MedusaAppOutput = {
+    modules: Record<string, LoadedModule | LoadedModule[]>;
+    link: RemoteLink | undefined;
+    query: (query: string | RemoteJoinerQuery | object, variables?: Record<string, unknown>) => Promise<any>;
+    entitiesMap?: Record<string, any>;
+    notFound?: Record<string, Record<string, string>>;
+    runMigrations: RunMigrationFn;
+};
+export declare function MedusaApp({ sharedContainer, sharedResourcesConfig, servicesConfig, modulesConfigPath, modulesConfigFileName, modulesConfig, linkModules, remoteFetchData, injectedDependencies, }?: {
+    sharedContainer?: MedusaContainer;
+    sharedResourcesConfig?: SharedResources;
+    loadedModules?: LoadedModule[];
+    servicesConfig?: ModuleJoinerConfig[];
+    modulesConfigPath?: string;
+    modulesConfigFileName?: string;
+    modulesConfig?: MedusaModuleConfig;
+    linkModules?: ModuleJoinerConfig | ModuleJoinerConfig[];
+    remoteFetchData?: RemoteFetchDataCallback;
+    injectedDependencies?: any;
+}): Promise<{
+    modules: Record<string, LoadedModule | LoadedModule[]>;
+    link: RemoteLink | undefined;
+    query: (query: string | RemoteJoinerQuery | object, variables?: Record<string, unknown>) => Promise<any>;
+    entitiesMap?: Record<string, any>;
+    notFound?: Record<string, Record<string, string>>;
+    runMigrations: RunMigrationFn;
+}>;

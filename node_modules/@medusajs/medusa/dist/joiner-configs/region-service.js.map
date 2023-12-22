@@ -1,0 +1,1 @@
+{"version":3,"file":"region-service.js","sourceRoot":"","sources":["../../src/joiner-configs/region-service.ts"],"names":[],"mappings":";;AAEA,kBAAe;IACb,WAAW,EAAE,eAAe;IAC5B,WAAW,EAAE,CAAC,IAAI,CAAC;IACnB,YAAY,EAAE,EAAE,SAAS,EAAE,QAAQ,EAAE;IACrC,KAAK,EAAE;QACL;YACE,IAAI,EAAE,QAAQ;SACf;QACD;YACE,IAAI,EAAE,SAAS;SAChB;KACF;CACoB,CAAA"}
